@@ -12,15 +12,12 @@ spring:
       max-request-size: 200MB
 
   datasource:
-    url: jdbc:postgrsql://localhost:5432/projetstage2021
+    url: jdbc:postgresql://localhost:5432/projetstage2021
+    
     username: root
     password: 
-#    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: create
     show-sql: true
-
-
-
-
