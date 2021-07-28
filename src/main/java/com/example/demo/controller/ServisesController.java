@@ -134,7 +134,7 @@ public class ServisesController {
 		//verifier si le nom du service existe deja dans la base de donnée
 		if(liste!=null) {
 			for(Services l : liste) {
-				if(l.getNomService().equals((s.getNomService()))) {
+				if(l.getNomService().equals((s.getNomService()))&& l.getIdService()!=s.getIdService()) {
 					 throw new RuntimeException("Le nom du service existe déjà");
 				}
 			}
